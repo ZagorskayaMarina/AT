@@ -1,4 +1,3 @@
-package PACKAGE_NAME;
-
-public interface Function {
+public interface Function<Engineer, Result> {
+    public Result apply (Engineer engineer);
 }

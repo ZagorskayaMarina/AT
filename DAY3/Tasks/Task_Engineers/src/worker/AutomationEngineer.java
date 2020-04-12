@@ -1,3 +1,5 @@
-public class AutomationEngineer extends Engineer{
+package worker;
+
+public class AutomationEngineer extends Engineer {
 
 }

@@ -1,3 +1,5 @@
+package people;
+
 public abstract class Human {
     private int age;
 

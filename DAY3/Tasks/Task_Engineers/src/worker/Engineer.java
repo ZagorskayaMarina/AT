@@ -1,9 +1,13 @@
+package worker;
+
+import entity.*;
+import entity.Test;
 import org.hamcrest.*;
 import org.junit.*;
+import people.Person;
 
 
-
-public abstract class Engineer extends Person{
+public abstract class Engineer extends Person {
     private int skill = (int) (Math.random() * 10) +1;
     private int anxiety = 3;
 

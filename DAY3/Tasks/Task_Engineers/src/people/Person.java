@@ -1,3 +1,7 @@
+package people;
+
+import people.Human;
+
 public class Person extends Human {
     private String name;
     private String surname;

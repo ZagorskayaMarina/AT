@@ -1,12 +1,12 @@
-import entity.AutomatedTest;
-import entity.ManualTest;
-import entity.Result;
-import worker.AutomationEngineer;
-import worker.Engineer;
+package entity;
 
-public abstract class Test implements Function<Engineer, Result>{
+import worker.*;
 
-    //private TestLevel testLevel;
+import java.util.function.Function;
+
+public abstract class Test implements Function<Engineer, Result> {
+
+    //private entity.TestLevel testLevel;
 
     private int complexity;
 
@@ -32,7 +32,7 @@ public abstract class Test implements Function<Engineer, Result>{
         Result result;
 
         if (((this instanceof ManualTest) && (engineer instanceof AutomationEngineer)) |
-        ((this instanceof AutomatedTest) && (engineer instanceof TestEngineer ))) {
+        ((this instanceof AutomatedTest) && (engineer instanceof TestEngineer))) {
             anxiety = engineer.getAnxiety();
         }
 
