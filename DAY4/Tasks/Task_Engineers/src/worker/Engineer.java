@@ -8,7 +8,7 @@ import people.Person;
 
 
 public abstract class Engineer extends Person {
-    private int skill = (int) (Math.random() * 10) +1;
+    private int skill;
     private int anxiety = 3;
 
     public int getAnxiety() {
@@ -17,6 +17,18 @@ public abstract class Engineer extends Person {
 
     public int getSkill() {
         return skill;
+    }
+
+    public void setAnxiety(int anxiety) {
+        this.anxiety = anxiety;
+    }
+
+    public void setSkill(int skill) {
+        this.skill = skill;
+    }
+
+    public void randomSkill(){
+        skill  = (int) (Math.random() * 10) +1;
     }
 
     public Result executeTest(Test test) {

@@ -18,7 +18,7 @@ public abstract class Test implements Function<Engineer, Result> {
 
     public Test(TestLevel testLevel, int instability){
         this.complexity = testLevel.getCOMPLEXITY();
-        if (instability == 0){
+        if (instability <= 0){
             instability = 0;
         } else if (instability > 10){
             instability = 10;
