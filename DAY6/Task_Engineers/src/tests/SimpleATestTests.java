@@ -1,12 +1,12 @@
 package tests;
 
-import entity.AutomatedTest;
-import entity.TestLevel;
+import DAY4.entity.AutomatedMyTest;
+import DAY4.entity.TestLevel;
 import org.junit.Assert;
 import org.junit.Test;
-import worker.AutomationEngineer;
-import worker.Engineer;
-import worker.TestEngineer;
+import DAY4.worker.AutomationEngineer;
+import DAY4.worker.Engineer;
+import DAY4.worker.TestEngineer;
 
 public class SimpleATestTests {
 
@@ -15,17 +15,17 @@ public class SimpleATestTests {
 
     @Test
     public void instabilityLessNull() {
-        AutomatedTest autoTest = new AutomatedTest(TestLevel.API, 0);
+        AutomatedMyTest autoTest = new AutomatedMyTest(TestLevel.API, 0);
         Assert.assertEquals("If instability %d less than null instability = %d", 0, autoTest.getInstability());
     }
     @Test
     public void instabilityMore10() {
-        AutomatedTest autoTest = new AutomatedTest(TestLevel.API, 11);
+        AutomatedMyTest autoTest = new AutomatedMyTest(TestLevel.API, 11);
         Assert.assertEquals("If instability %d more than 10 instability = %d", 10, autoTest.getInstability());
     }
     @Test
     public void instabilityBetween1and10() {
-        AutomatedTest autoTest = new AutomatedTest(TestLevel.API, 9);
+        AutomatedMyTest autoTest = new AutomatedMyTest(TestLevel.API, 9);
         Assert.assertEquals("If instability %d value in a range between 1 and 10 instability = %d", 9, autoTest.getInstability());
     }
 }
