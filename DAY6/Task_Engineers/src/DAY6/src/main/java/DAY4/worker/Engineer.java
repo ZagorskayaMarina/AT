@@ -1,7 +1,8 @@
 package DAY4.worker;
 
-import DAY4.entity.*;
+import DAY4.entity.Code;
 import DAY4.entity.MyTest;
+import DAY4.entity.Result;
 import DAY4.people.Person;
 
 

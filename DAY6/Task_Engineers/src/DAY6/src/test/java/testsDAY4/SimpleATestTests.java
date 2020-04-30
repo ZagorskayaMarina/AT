@@ -1,12 +1,12 @@
-package tests;
+package testsDAY4;
 
 import DAY4.entity.AutomatedMyTest;
 import DAY4.entity.TestLevel;
-import org.junit.Assert;
-import org.junit.Test;
 import DAY4.worker.AutomationEngineer;
 import DAY4.worker.Engineer;
 import DAY4.worker.TestEngineer;
+import org.junit.Assert;
+import org.junit.Test;
 
 public class SimpleATestTests {
 

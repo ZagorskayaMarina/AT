@@ -1,7 +1,8 @@
 package DAY4;
 
 import DAY4.people.Person;
-import DAY4.worker.*;
+import DAY4.worker.Engineer;
+import DAY4.worker.TestEngineer;
 
 public class Runner {
     public static void main(String[] args){

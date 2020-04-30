@@ -1,4 +1,4 @@
-package DAY6.tests;
+package tests;
 
 import DAY4.entity.*;
 import DAY4.worker.AutomationEngineer;

@@ -1,11 +1,14 @@
-package tests;
+package testsDAY4;
 
-import DAY4.entity.*;
+import DAY4.entity.ManualMyTest;
+import DAY4.entity.MyTest;
+import DAY4.entity.Result;
+import DAY4.entity.TestLevel;
+import DAY4.worker.Engineer;
+import DAY4.worker.TestEngineer;
 import org.junit.Assert;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import DAY4.worker.Engineer;
-import DAY4.worker.TestEngineer;
 
 import java.util.Arrays;
 import java.util.Collection;
