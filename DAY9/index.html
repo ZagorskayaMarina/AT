@@ -1,0 +1,35 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Main page</title>
+	<link href="style.css" rel="stylesheet">
+	<link rel="shortcut icon" href="/favicon.png" type="image/png">
+	<script>
+      var cachedValue;
+
+      function hideValue(el) {
+        cachedValue = el.getAttribute("value");
+        el.setAttribute("value", "");
+      }
+
+      function setValue(el) {
+        el.setAttribute("value", cachedValue);
+      }
+    </script>
+</head>
+<body>
+<H1>Welcome!</H1>
+<form action="oldSite/about.html" method="get">
+	<input class="one" onmousemove="hideValue(this)" onmouseout="setValue(this)" type="submit" id="about" value="About Us"/>
+</form>
+<form action="app/index.php" method="get">
+	<input class="two" onmousemove="hideValue(this)" onmouseout="setValue(this)" type="submit" id="regis" value="Check Registration"/>
+</form>
+<form action="media.html" method="get">
+	<input class="three" onmousemove="hideValue(this)" onmouseout="setValue(this)" type="submit" id="media" value="Get Media"/>
+</form>
+<br/>
+<br/>
+<p> This is just a dummy site (c) </p>
+</body>
+</html>
