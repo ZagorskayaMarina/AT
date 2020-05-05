@@ -2,36 +2,14 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 import java.util.concurrent.ThreadLocalRandom;
+import org.apache.commons.lang3.RandomStringUtils;
 
 public class Generator {
-    private static final String PASS_CHARS = "abcdefghijklmnopqrstuvwxyz";
-    private static final int LOGIN_LENGTH = 8;
-    private static final int PASSWORD_LENGTH = 10;
-
-    public static Map<String, String> getListOfUsers(int quantity) {
-        Map<String, String> listOfUsers = new HashMap<>();
-        String login;
-        String password;
-        for (int i = 0; i < quantity; i++) {
-            login = generateLogin();
-            password = generatePassword();
-            listOfUsers.put(login, password);
-        }
-        return listOfUsers;
+    public static String generateLogin(int login) {
+        return RandomStringUtils.randomAlphabetic(login);
     }
-
-    public static String generateLogin() {
-        StringBuilder login = new StringBuilder(LOGIN_LENGTH);
-        for (int i = 0; i < LOGIN_LENGTH; i++){
-            login.append(PASS_CHARS.charAt(ThreadLocalRandom.current().nextInt(0, PASS_CHARS.length())));
-        }
-        return login.toString();
-    }
-
-    public static String generatePassword() {
-        String password = UUID.randomUUID().toString().substring(0,PASSWORD_LENGTH);
-        password.replace("", password);
-        return password;
+    public static String generatePassword(int password) {
+        return RandomStringUtils.randomAlphabetic(password);
     }
 
 }
