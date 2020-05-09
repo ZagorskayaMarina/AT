@@ -32,7 +32,7 @@ public class SeleniumTest2 {
         WebElement adults = driver.findElement(By.xpath("//*[@id='xp__guests__toggle']"));
         adults.click();
 
-        WebElement plusAdult = driver.findElement(By.xpath("//*[@id='xp__guests__inputs-container']/div/div/div[1]/div/" +
+        /*WebElement plusAdult = driver.findElement(By.xpath("//*[@id='xp__guests__inputs-container']/div/div/div[1]/div/" +
                 "div[2]/button[2]/span"));
 
         plusAdult.click();
@@ -53,7 +53,7 @@ public class SeleniumTest2 {
         expensiveHotels.click();
 
         String export = expensiveHotels.getText();
-        System.out.println();
+        System.out.println();*/
         
     }
 }
